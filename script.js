@@ -81,3 +81,12 @@ if (mobileMenuBtn && mobileNav) {
   });
 }
 
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (
+    !e.target.closest(".mobile-nav") &&
+    !e.target.closest(".mobile-menu-btn")
+  ) {
+    mobileNav.classList.remove("active");
+  }
+});
