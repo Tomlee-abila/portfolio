@@ -64,4 +64,20 @@ if (contactForm) {
   });
 }
 
+// Mobile menu functionality
+const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+const mobileNav = document.querySelector(".mobile-nav");
+
+if (mobileMenuBtn && mobileNav) {
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+
+  // Close mobile menu when clicking a link
+  mobileNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+    });
+  });
+}
 
