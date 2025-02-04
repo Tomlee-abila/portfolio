@@ -44,22 +44,22 @@
 
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-      contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    // if (contactForm) {
+    //   contactForm.addEventListener('submit', (e) => {
+    //     e.preventDefault();
 
-        // Add form submission logic here
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
+    //     // Add form submission logic here
+    //     const formData = new FormData(contactForm);
+    //     const data = Object.fromEntries(formData);
 
-        // For demonstration, log the form data
-        console.log('Form submitted:', data);
+    //     // For demonstration, log the form data
+    //     console.log('Form submitted:', data);
 
-        // Show success message
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
-      });
-    }
+    //     // Show success message
+    //     alert('Thank you for your message! I will get back to you soon.');
+    //     contactForm.reset();
+    //   });
+    // }
 
     // Mobile menu functionality
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
